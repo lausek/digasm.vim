@@ -1,11 +1,18 @@
 syn case ignore
 
+" Comments
+syn match syntaxComment ";.*"
+
+" Register
+syn keyword syntaxRegister R0 R1 R2 R3 R4 R5 R6
+syn keyword syntaxRegister R7 R8 R9 R10 R11 R12
+syn keyword syntaxRegister BP SP RA
+
 " Macros
 syn keyword syntaxMacro POP PUSH
 syn keyword syntaxMacro CALL RET _SCALL
 syn keyword syntaxMacro LEAVE LEAVEI ENTER ENTERI
 syn keyword syntaxMacro DEC INC
-
 
 " Keywords
 syn keyword syntaxKeyword NOP
@@ -37,8 +44,10 @@ syn match syntaxNumber /\<\d\+\(\.\)\?\d*/
 syn region syntaxString start='"' end='"'
 
 hi def link syntaxBuiltin PreProc
+hi def link syntaxComment Comment
 hi def link syntaxOperator Operator
 hi def link syntaxKeyword Keyword
 hi def link syntaxNumber Number
 hi def link syntaxMacros Constant
+hi def link syntaxRegister Type
 hi def link syntaxString String
