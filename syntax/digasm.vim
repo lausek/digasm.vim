@@ -30,7 +30,14 @@ syn keyword digasmKeyword LEAVE LEAVEI ENTER ENTERI
 syn keyword digasmKeyword DEC INC
 
 " Directive
-syn match digasmBuiltin "\.reg" "\.long" "\.org" "\.const" "\.include" "\.word" "\.dorg" "\.data"
+syn match digasmBuiltin "\.reg"
+syn match digasmBuiltin "\.long"
+syn match digasmBuiltin "\.org"
+syn match digasmBuiltin "\.const"
+syn match digasmBuiltin "\.include"
+syn match digasmBuiltin "\.word"
+syn match digasmBuiltin "\.dorg"
+syn match digasmBuiltin "\.data"
 
 syn case match
 
