@@ -1,8 +1,11 @@
+syn case ignore
+
 " Macros
 syn keyword syntaxMacro POP PUSH
 syn keyword syntaxMacro CALL RET _SCALL
 syn keyword syntaxMacro LEAVE LEAVEI ENTER ENTERI
 syn keyword syntaxMacro DEC INC
+
 
 " Keywords
 syn keyword syntaxKeyword NOP
@@ -21,6 +24,8 @@ syn keyword syntaxKeyword BRK RETI
 
 " Directive
 syn match syntaxBuiltin "\.reg" "\.long" "\.org" "\.const" "\.include" "\.word" "\.dorg" "\.data"
+
+syn case match
 
 " Operators
 syn match syntaxOperator "\(+\|\[\|\]\)"
