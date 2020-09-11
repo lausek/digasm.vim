@@ -45,7 +45,7 @@ syn case match
 syn match digasmOperator "\(+\|\[\|\]\)"
 
 " Numbers
-syn match digasmNumber /\<\(0x\)\?[\da-fA-F]\+/
+syn match digasmNumber /\<\(0x\)\?\(\d\|a\|b\|c\|d\|e\|f\|A\|B\|C\|D\|E\|F\)\+\>/
 
 " Strings
 syn region digasmString start='"' end='"'
