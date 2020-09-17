@@ -42,7 +42,7 @@ syn match digasmBuiltin "\.data"
 syn case match
 
 " Operators
-syn match digasmOperator "\(+\|\[\|\]\)"
+syn match digasmOperator "\(+\|\[\|\]\|-\)"
 
 " Numbers
 syn match digasmNumber /\<\(0x\)\?\(\d\|a\|b\|c\|d\|e\|f\|A\|B\|C\|D\|E\|F\)\+\>/
